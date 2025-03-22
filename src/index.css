@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --primary: 214 100% 50%;
+    --primary-foreground: 210 40% 98%;
+    
+    --secondary: 120 61% 50%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    
+    --accent: 35 100% 50%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    
+    --highlight: 350 100% 60%;
+    --highlight-foreground: 210 40% 98%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    
+    --radius: 0.5rem;
+
+    --header-height: 4rem;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+.football-pattern {
+  background-color: transparent;
+  background-image: 
+    radial-gradient(circle at 10% 20%, #ffffff 1px, transparent 3px),
+    radial-gradient(circle at 50% 70%, #ffffff 1px, transparent 2px),
+    radial-gradient(circle at 80% 30%, #ffffff 1px, transparent 3px),
+    radial-gradient(circle at 25% 60%, #ffffff 1px, transparent 2px),
+    radial-gradient(circle at 65% 45%, #ffffff 1px, transparent 3px),
+    radial-gradient(circle at 40% 90%, #ffffff 1px, transparent 2px),
+    radial-gradient(circle at 90% 80%, #ffffff 1px, transparent 2px);
+  background-size: 120px 120px;
+  background-position: 0 0;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}

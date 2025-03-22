@@ -22,6 +22,19 @@
       "purpose": "maskable"
     }
   ],
+  "screenshots": [
+    {
+      "src": "/images/stadium-bg.webp",
+      "type": "image/webp",
+      "sizes": "1920x1080",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/images/stadium-bg.webp",
+      "type": "image/webp",
+      "sizes": "1080x1920"
+    }
+  ],
   "orientation": "portrait",
   "scope": "/",
   "prefer_related_applications": false

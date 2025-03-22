@@ -10,20 +10,17 @@
     {
       "src": "/icons/android/android-launchericon-72-72.png",
       "sizes": "72x72",
-      "type": "image/png",
-      "purpose": "any"
+      "type": "image/png"
     },
     {
       "src": "/icons/android/android-launchericon-96-96.png",
       "sizes": "96x96",
-      "type": "image/png",
-      "purpose": "any"
+      "type": "image/png"
     },
     {
       "src": "/icons/android/android-launchericon-144-144.png",
       "sizes": "144x144",
-      "type": "image/png",
-      "purpose": "any"
+      "type": "image/png"
     },
     {
       "src": "/icons/android/android-launchericon-192-192.png",
@@ -35,25 +32,24 @@
       "src": "/icons/android/android-launchericon-512-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "any"
     }
   ],
   "screenshots": [
     {
-      "src": "/screenshots/desktop.png",
-      "sizes": "1920x1080",
-      "type": "image/png",
+      "src": "/screenshots/desktop.webp",
+      "type": "image/webp",
       "form_factor": "wide",
-      "label": "Homescreen of Karta Cup V"
+      "sizes": "1920x1080"
     },
     {
-      "src": "/screenshots/mobile.png",
-      "sizes": "1080x1920",
-      "type": "image/png",
-      "label": "Mobile homescreen of Karta Cup V"
+      "src": "/screenshots/mobile.webp",
+      "type": "image/webp",
+      "sizes": "1080x1920"
     }
   ],
   "orientation": "portrait",
+  "id": "ktcpv-pwa",
   "categories": ["sports", "utilities"],
   "prefer_related_applications": false
 } 

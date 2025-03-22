@@ -72,10 +72,18 @@
   ],
   "screenshots": [
     {
-      "src": "windows11/SplashScreen.scale-200.png",
+      "src": "windows11/Wide310x150Logo.scale-400.png",
       "sizes": "1240x600",
       "form_factor": "wide",
-      "type": "image/png"
+      "type": "image/png",
+      "label": "Homescreen of Karta Cup V"
+    },
+    {
+      "src": "windows11/LargeTile.scale-400.png",
+      "sizes": "1240x1240",
+      "form_factor": "narrow",
+      "type": "image/png",
+      "label": "Mobile homescreen of Karta Cup V"
     }
   ],
   "orientation": "portrait",

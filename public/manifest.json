@@ -25,14 +25,16 @@
   "screenshots": [
     {
       "src": "/karta-cup-logo.png",
-      "sizes": "1080x1080",
+      "sizes": "231x384",
       "type": "image/png",
-      "form_factor": "wide"
+      "form_factor": "wide",
+      "label": "Halaman Login Karta Cup V"
     },
     {
       "src": "/karta-cup-logo.png",
-      "sizes": "1080x1080",
-      "type": "image/png"
+      "sizes": "231x384",
+      "type": "image/png",
+      "label": "Halaman Login Mobile Karta Cup V"
     }
   ],
   "orientation": "portrait",

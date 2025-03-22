@@ -11,13 +11,13 @@
       "src": "/icons/android/android-launchericon-72-72.png",
       "sizes": "72x72",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "any"
     },
     {
       "src": "/icons/android/android-launchericon-96-96.png",
       "sizes": "96x96",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "any"
     },
     {
       "src": "/icons/android/android-launchericon-144-144.png",

@@ -1,28 +1,23 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import path from "path";
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    {
-      name: 'configure-response-headers',
-      configureServer: (server) => {
-        server.middlewares.use((_req, res, next) => {
-          res.setHeader('Content-Type', 'application/javascript');
-          next();
-        });
-      }
-    }
-  ],
+  plugins: [react()],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      "@": __dirname + "/src",
     },
   },
   server: {
-    allowedHosts: true,
+    headers: {
+      'Content-Type': 'application/javascript',
+    },
   },
   build: {
     rollupOptions: {
@@ -37,6 +32,6 @@ export default defineConfig({
     sourcemap: true
   },
   define: {
-    'process.env': process.env
+    'process.env': {}
   }
 });

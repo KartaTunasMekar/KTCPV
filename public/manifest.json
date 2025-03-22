@@ -33,7 +33,14 @@
       "src": "/images/stadium-bg.webp",
       "sizes": "1920x1080",
       "type": "image/webp",
-      "form_factor": "wide"
+      "form_factor": "wide",
+      "platform": "web"
+    },
+    {
+      "src": "/images/stadium-bg.webp",
+      "sizes": "1080x1920",
+      "type": "image/webp",
+      "platform": "web"
     }
   ],
   "orientation": "portrait",
